@@ -12,12 +12,13 @@ const palindromes = function (x) {
   let wordLength = shortenedX.length;
 
   //  Check first character and last character are the same and all charcters inbetten
-  //  if character count is odd then ignore the middle character
-  for (a = 0, b = wordLength - 1; wordLength > wordLength / 2; a++, b--){
-    if (x[a] == x[b]) {
-
+  for (a = 0; a < wordLength / 2; a++){
+    if (shortenedX[a] !== shortenedX[wordLength - 1 - a]) {
+        return false;
     }
   }
+  //  initially put in 'return true' as a else after that if and didn't work out for the final test
+  return true;
 };
 
 // Do not edit below this line
