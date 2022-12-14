@@ -1,7 +1,7 @@
 const convertToCelsius = function (fc) {
-  const cel = (fc - 32) * (5 / 9);
+  const temp = (fc - 32) * (5 / 9);
   // Round the number to the nearest 0.1 value
-  var rounded = Math.round(cel * 10) / 10;
+  var rounded = Math.round(temp * 10) / 10;
 
   // Check if the decimal part is zero
   if (rounded % 1 === 0) {
@@ -14,8 +14,8 @@ const convertToCelsius = function (fc) {
 };
 
 const convertToFahrenheit = function (cf) {
-  const cel = cf * (9 / 5) + 32;
-  var rounded = Math.round(cel * 10) / 10;
+  const temp = cf * (9 / 5) + 32;
+  var rounded = Math.round(temp * 10) / 10;
 
   // Check if the decimal part is zero
   if (rounded % 1 === 0) {
