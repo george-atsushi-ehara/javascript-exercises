@@ -9,13 +9,13 @@ const palindromes = function (x) {
     .toLowerCase();
 
   //  Set Word length for array
-  let wordLength = x.length;
+  let wordLength = shortenedX.length;
 
   //  Check first character and last character are the same and all charcters inbetten
   //  if character count is odd then ignore the middle character
   for (a = 0, b = wordLength - 1; wordLength > wordLength / 2; a++, b--){
     if (x[a] == x[b]) {
-        
+
     }
   }
 };
